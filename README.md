@@ -1,6 +1,6 @@
 # programacao-oo
 
-- Programação orientada a objetos</br>
+- Programação Orientada a Objetos</br>
 - Análise e Desenvolvimento de Sistemas</br>
 - Período: 3°</br>
 - Aluna: Audrey Cristhiny T. Kochinski</br>
