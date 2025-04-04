@@ -6,4 +6,4 @@ public class Exercicio02 {
         l1.exibir();
         l2.exibir();
     }
-}
+} 
