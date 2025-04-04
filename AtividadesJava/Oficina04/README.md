@@ -1,4 +1,4 @@
-# Programação Orientada a Objetos - Exercícios em Java Oficina04
+# Programação Orientada a Objetos - Exercícios em Java Oficina 04
 
 Este repositório contém atividades e exercícios práticos sobre o conceito de Programação Orientada a Objetos (POO) em Java. 
 Os exercícios abordam temas como classes, objetos, construtores e outros conceitos fundamentais da POO.
