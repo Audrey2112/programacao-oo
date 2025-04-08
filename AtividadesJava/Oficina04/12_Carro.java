@@ -1,6 +1,5 @@
 /*
- Exercício 6
-    - Construtor com uso de this para diferenciar variáveis
+ Exercício 6 - Construtor com uso de this para diferenciar variáveis
     - Crie a classe Carro com atributos modelo e ano. 
     - O construtor deve utilizar this para diferenciar parâmetros dos atributos da instância. 
     - Implemente o método exibir().
