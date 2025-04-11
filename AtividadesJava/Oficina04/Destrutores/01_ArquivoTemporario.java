@@ -36,3 +36,16 @@ Exercício 1 - Sobrescrita do método finalize()
         }
     }
 }
+
+/*
+A classe pode realizar a finalização simplesmente definindo e implementando um método nela chamado finalize(). 
+O método finalize() deve ser declarado da seguinte forma:
+    protected void finalize () throws throwable
+
+
+O que se reume em:
+protected void finalize() throws Throwable {   
+    // limpe o código para esta classe aqui
+    super.finalize();
+}
+*/
