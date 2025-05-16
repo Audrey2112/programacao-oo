@@ -11,7 +11,8 @@ public class Arqueiro extends Personagem {
 
         private Random rand = new Random();  // Está sendo usado para determinar a chance de um ataque crítico no inimigo
 
-        public Arqueiro(String nome) { // Construtor da subclasse
+// - Construtor da subclasse usando o super()
+        public Arqueiro(String nome) { 
             super(nome, 100, 20); // super - Chamada para o construtor default da classe pai (Personagem)
         }
 
@@ -30,8 +31,8 @@ public class Arqueiro extends Personagem {
         }
 
         @Override
-        public void usarHabilidadeEspecial() {
-            System.out.println(nome + " Usa sua habilidade especial: CHUVA DE FLECHAS!!!!!!");
+        public void usarHabilidadeEspecial() { 
+            System.out.println(nome + " Usa sua habilidade especial com três ataques consecutivos: CHUVA DE FLECHAS!!!!!!");
            // Sem inimigo definido, mas ainda sim é simulado a habilidade especial
         }
 }
