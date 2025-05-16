@@ -9,30 +9,29 @@ import java.util.Random;
 // -  Criando a subclasse Arqueiro
 public class Arqueiro extends Personagem {
 
-        private Random rand = new Random();
+        private Random rand = new Random();  // Está sendo usado para determinar a chance de um ataque crítico no inimigo
 
-        public Arqueiro(String nome) {
-            super(nome, 100, 20);
+        public Arqueiro(String nome) { // Construtor da subclasse
+            super(nome, 100, 20); // super - Chamada para o construtor default da classe pai (Personagem)
         }
 
         @Override
-        public void atacar(Personagem inimigo) {
-            boolean critico = rand.nextInt(100) < 25; // 25% de chance de crítico
-            int dano = critico ? ataqueBase * 2 : ataqueBase;
+        public void atacar(Personagem inimigo) {  // Verifica se é um ataque crítico (possui 25% de chance)
+            boolean critico = rand.nextInt(100) < 25; // aqui é definido esses 25% de chance
+            int dano = critico ? ataqueBase * 2 : ataqueBase; // Caso seja um ataque crítico, o dano causado ao inimigo é dobrado
             System.out.println(nome + (critico ? " acerta um CRÍTICO em " : " atira em ") + inimigo.nome + " causando " + dano + " de dano!");
-            inimigo.defender(dano);
+            inimigo.defender(dano); // Vai aplicar o dano cometido no inimigo
         }
 
         @Override
         public void defender(int dano) {
-            hp -= dano;
+            hp -= dano; // Usado para subtrair o dano da vida 
             System.out.println(nome + " levou " + dano + " de dano. Precisa de cobertura!");
         }
 
         @Override
         public void usarHabilidadeEspecial() {
             System.out.println(nome + " Usa sua habilidade especial: CHUVA DE FLECHAS!!!!!!");
-            // Sem inimigo definido aqui, mas simula o efeito.
+           // Sem inimigo definido, mas ainda sim é simulado a habilidade especial
         }
-
 }
